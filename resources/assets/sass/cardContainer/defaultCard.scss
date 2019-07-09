@@ -1,0 +1,42 @@
+@import '../variables/containerVariables';
+
+@mixin card-container($width, $padding) {
+    max-width: $width;
+    padding: $padding;   
+}
+
+@mixin card($width, $padding) {
+    @include card-container($width, $padding);  
+    background-color: $card-bg;
+   
+    /* just in case there no content*/
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    margin-top: 50px;
+    /* shadows and rounded borders */
+    border:solid gray;
+    border-width: 0.5px;
+    border-radius: 10px;
+    -moz-border-radius: $card-border-radius;
+    -webkit-border-radius: 10px;
+    -moz-box-shadow: 5px 5px 3px #888888;
+    -webkit-box-shadow: 5px 5px 3px #888888;
+    box-shadow: 5px 5px 3px #888888;
+}
+
+@mixin field() {
+    direction: $card-field-direction;
+    height: $card-field-height;
+    font-size: $card-field-font-size;
+    width: $card-field-width;
+    display: $card-field-display;
+    margin-bottom: $card-field-margin-bottom;
+    z-index: $card-field-z-index;
+    position: $card-field-position;
+    -moz-box-sizing: $card-field-moz-box-sizing;
+    -webkit-box-sizing: $card-field-webkit-box-sizing;
+    box-sizing: $card-fieldbox-sizing;
+}
+
+
+  

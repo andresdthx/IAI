@@ -1,0 +1,9 @@
+@import "cardContainer/defaultCard";
+
+.container-create {
+    margin: 50px;
+}
+
+.card-create-container {
+    @include card(600px, 40px);
+}

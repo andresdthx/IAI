@@ -1,0 +1,18 @@
+Cambiar - Director de Transferencia de Conocimiento y Propiedad Intelectual por 
+          Coordinador de innovación y transferencia
+
+Incluir al Coordinador de Innovación y Transferencia como uno de los posibles responsables de ejecutar las estrategias de gestión;
+
+Corregir Bug: Ruta: Todos_los_proyectos CHECK
+Desglosar los ítems: artículo, ensayo y poster en la clasificación de los AI. CHECK.
+
+Incluir, en la plantilla de inicio, Semilleros como posible opción, además de los Grupos de Investigación;
+1000 PUNTOS CHECK
+
+Incluir la posibilidad de mover activos ya diligenciados de un proyecto a otro, dentro del mismo grupo de Investigación.
+ASIGNAR PROYECTO A ACTIVO.
+5000 PUNTOS 
+
+
+pg_restore --verbose --clean --no-acl --no-owner -h localhost -U postgres -d db_iai_escuela_2 latest.dump
+php artisan make:migration add_semilleros_to_subproyectos_table --table=subproyectos

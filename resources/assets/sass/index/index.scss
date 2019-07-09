@@ -1,0 +1,15 @@
+@import "cardContainer/defaultCard";
+
+.container-index {
+    margin: 50px;
+}
+
+.card-index-container {
+    @include card(100%, 0px);
+    background-color: #F5F5F5;
+}
+
+
+.add-user {
+    float: right;
+}

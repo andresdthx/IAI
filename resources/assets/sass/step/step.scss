@@ -1,0 +1,10 @@
+@import "cardContainer/defaultCard";
+
+.container-create-step {
+    margin: 50px;
+}
+
+.card-create-container-step {
+    @include card(800px, 40px);
+    background-color: #F5F5F5;
+}
